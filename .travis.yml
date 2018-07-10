@@ -1,5 +1,6 @@
 language: python
 sudo: false 
+
 branches:
   only:
      - master
@@ -10,5 +11,5 @@ python:
 install:
   - pip install . 
 
-scripts:
+script:
   - pytest
