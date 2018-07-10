@@ -1,8 +1,11 @@
 """Test the `geology` module."""
 
 from hugs.calc import snell_angle
+
 from numpy.testing import assert_almost_equal
+
 import pytest
+
 
 def test_snell():
     """Test the basic wind component calculation."""
@@ -13,4 +16,4 @@ def test_snell():
 def test_top_velocity_error():
     """Test that warning is raised when velocity of top error is 0."""
     with pytest.raises(ValueError):
-        snell_angle(4.,0.,0.)
+        snell_angle(4., 0., 0.)
